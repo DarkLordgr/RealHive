@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+
 const backgroundUrl = '/images/hive-village.png'; // ✅ Reference from public/
 
 
