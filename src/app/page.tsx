@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import Faq from './components/Faq';
+import Image from 'next/image';
 
 export default function Home() {
   useEffect(() => {
@@ -37,11 +38,13 @@ export default function Home() {
           </a>
         </div>
         <div className="flex-1">
-          <img
-            src="/images/hivevilla1.png"
-            alt="Hive House"
-            className="w-full max-w-md mx-auto drop-shadow-xl"
-          />
+                      <Image
+              src="/images/hivevilla1.png"
+              alt="Hive"
+              width={350}
+              height={150}
+              className="rounded-xl shadow-lg"
+            />
         </div>
       </section>
 
@@ -82,11 +85,13 @@ export default function Home() {
 
       {/* Hivevilla image */}
       <section className="py-1 px-1 flex justify-center items-center bg-transparent">
-        <img
-          src="/images/hivevilla2.png"
-          alt="Hive Villa 2"
-          className="w-[160px] md:w-[240px] drop-shadow-xl transition-transform hover:scale-105"
-        />
+                  <Image
+            src="/images/hivevilla2.png"
+            alt="Hive"
+            width={300}
+            height={100}
+            className="rounded-xl shadow-lg"
+            />
       </section>
 
       {/* FAQ */}

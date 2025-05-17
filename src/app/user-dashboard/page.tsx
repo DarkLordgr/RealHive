@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function UserDashboard() {
   const [countdown] = useState('6m 0d 0h');
@@ -92,18 +93,21 @@ export default function UserDashboard() {
 
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
     {[1, 2, 3].map((nftId) => (
-      <div key={nftId} className="bg-[#141622] border border-yellow-400/20 rounded-xl p-4 shadow hover:shadow-yellow-400/20 transition">
-                <img
-          src={`/images/nft${nftId}.png`}
-          alt={`Hive NFT #${nftId}`}
-          className="rounded mb-4 w-full"
-        />
+        <div key={nftId} className="bg-[#141622] border border-yellow-400/20 rounded-xl p-4 shadow hover:shadow-yellow-400/20 transition">
+          <Image
+            src={`/images/nft${nftId}.png`}
+            alt={`Hive NFT #${3280 + nftId}`}
+            width={500}
+            height={500}
+            className="rounded mb-4 w-full"
+          />
 
-        <h3 className="text-yellow-300 font-bold mb-2">Hive NFT #{3280 + nftId}</h3>
-        <p className="text-white/80 text-sm">Status: <span className="text-green-400">Active</span></p>
-        <p className="text-white/80 text-sm">Honey Produced: <span className="text-yellow-400">4.{nftId}kg</span></p>
-      </div>
-    ))}
+          <h3 className="text-yellow-300 font-bold mb-2">Hive NFT #{3280 + nftId}</h3>
+          <p className="text-white/80 text-sm">Status: <span className="text-green-400">Active</span></p>
+          <p className="text-white/80 text-sm">Honey Produced: <span className="text-yellow-400">4.{nftId}kg</span></p>
+        </div>
+      ))}
+
   </div>
 
   

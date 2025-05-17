@@ -28,8 +28,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-6 text-sm font-semibold">
-          <Link href="/" className="hover:text-yellow-400 transition">Home</Link>
+        <div className="hidden md:flex justify-evenly flex-1 text-sm font-semibold ml-180">
           <Link href="/mint" className="hover:text-yellow-400 transition">Mint</Link>
           <Link href="/user-dashboard" className="hover:text-yellow-400 transition">Dashboard</Link>
           <button onClick={() => scrollToSection('how')} className="hover:text-yellow-400 transition cursor-pointer">How It Works</button>
