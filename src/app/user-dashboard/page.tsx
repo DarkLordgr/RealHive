@@ -10,9 +10,7 @@ export default function UserDashboard() {
   return (
     
       <main className="min-h-screen bg-gradient-to-br from-[#0e0f1a] to-[#1b1f35] text-white px-6 py-16 flex flex-col items-center relative">
-                  
-            
-                                          
+                                                          
                   {/* TOP-RIGHT USER PROFILE */}
                   <div className="absolute top-6 right-6 bg-[#141622] border border-yellow-500/20 rounded-lg p-4 text-white shadow-md w-[220px] z-50">
                     <h3 className="text-lg font-bold text-yellow-400 mb-3">👤 User Profile</h3>
