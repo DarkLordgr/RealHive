@@ -1,0 +1,11 @@
+{
+  "name": "RealHive #5",
+  "description": "A limited-edition NFT hive from RealHive Season 1. Each one supports a real-world beehive producing sweet, trackable honey.",
+  "image": "ipfs://NewUriToReplace/5.png",
+  "attributes": [
+    {
+      "trait_type": "Season",
+      "value": "1"
+    }
+  ]
+}
